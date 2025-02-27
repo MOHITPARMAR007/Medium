@@ -1,0 +1,42 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "medium_backend",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-02-22",
+  // "compatibility_flags": [
+  //   "nodejs_compat"
+  // ],
+  "vars": {
+    "MY_VAR": "my-variable",
+    "DATABASE_URL": "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiNDI1NGVhNDAtODVhMC00NGY0LThlOTktMTY0YWQ2ZDk2ZGUzIiwidGVuYW50X2lkIjoiMjNhNzMzNDI1YWU2NGQ3Njg3NjAwODRjZDk2MmVhNTIxODUyNGM1Nzk4YmMwMjkzNTdhYThhNzM1NjdlZDY2ZiIsImludGVybmFsX3NlY3JldCI6IjE5OWZlYjlmLTE3MWYtNGM2Ny05MjBkLTI1MDI5ZTEyY2Y4NCJ9.4n0m_dFIchq7AtdzfD5TuwJW3Tr7keqaZO2gelK-vV4",
+    "JWT_SECRET" : "Mohit@123"
+
+  }
+  // "kv_namespaces": [
+  //   {
+  //     "binding": "MY_KV_NAMESPACE",
+  //     "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  //   }
+  // ],
+  // "r2_buckets": [
+  //   {
+  //     "binding": "MY_BUCKET",
+  //     "bucket_name": "my-bucket"
+  //   }
+  // ],
+  // "d1_databases": [
+  //   {
+  //     "binding": "MY_DB",
+  //     "database_name": "my-database",
+  //     "database_id": ""
+  //   }
+  // ],
+  // "ai": {
+  //   "binding": "AI"
+  // },
+  // "observability": {
+  //   "enabled": true,
+  //   "head_sampling_rate": 1
+  // }
+}
+// psotgress url = postgresql://neondb_owner:npg_8QtdMGhNEw2f@ep-morning-cell-a8a0p6zl-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
