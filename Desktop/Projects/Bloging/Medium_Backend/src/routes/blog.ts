@@ -30,7 +30,7 @@ export const blogRouter = new  Hono<{
 
 blogRouter.use('/*', async (c, next) => { 
     try {
-      const authHeader = c.req.header('Authorization') || " ";
+      const authHeader = c.req.header('Authorization')?.split(' ')[1] || " ";
       //console.log(authHeader,"geting auth heder");
       
      const response = await verify(authHeader, c.env.JWT_SECRET);
